@@ -11,8 +11,19 @@ This tool finds Open Reading Frames (ORFs) in FASTA files.
 2. Install dependencies: `pip install biopython`
 
 ## Usage
-```console
-python genefinder.py input_file.fasta
+```bash
+# For simple gene finder
+python genefinder.py input_file.fna
+
+# For gene finder with reverse compliments
+python genefinder_reverse.py input_file.fna
+
+# For gene finder with length filter
+python genefinder_filtered.py input_file.fna -l min_length
+
+# For gene finder with length filter, rbs location, and rbs sequence
+python genefinder_rbs.py input_file.fna -l min_length -u upstream_bp -r rbs_sequence
+
 ```
 
 # Steps followed to create this repo
