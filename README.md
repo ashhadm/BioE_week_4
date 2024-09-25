@@ -73,3 +73,10 @@ git commit -m "added genefinder_rbs.py"
 # usage
 python genefinder_filtered.py /home/ashhadm/genomes/e.coli.fna -l 150 -u 25 -r AGGAGG
 ```
+## Push repo to github
+
+```bash
+git remote add origin https://github.com/ashhadm/BioE_week_4.git
+git branch -M main
+git push -u origin main
+```
