@@ -49,7 +49,7 @@ python genefinder_reverse.py /home/ashhadm/genomes/e.coli.fna > output2.txt
 ## Applying code to all 14 downloaded genomes
 
 ```bash
-find /home/ashhadm/in_class/genomes -type f -name "*GCF*.fna" | while read genome; do python genefinder.py "$genome"; done > all_orfs.txt
+find /home/ashhadm/in_class/genomes -type f -name "*GCF*.fna" | while read genome; do python genefinder_reverse.py "$genome"; done > all_orfs.txt
 ```
 ## Implementing gene finder with length filter
 
