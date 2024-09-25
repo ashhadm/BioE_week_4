@@ -19,7 +19,7 @@ python genefinder.py input_file.fasta
 
 ## Initialize Directory for Git
 
-```console
+```bash
 mkdir BioE_week_4
 cd BioE_week_4
 git init
@@ -27,7 +27,7 @@ touch genefinder.py README.md
 ```
 ## Implementing genefinder
 
-```console
+```bash
 nano genefinder.py
 git add genefinder.py README.md
 git commit -m "added genefinder.py"
@@ -37,7 +37,7 @@ python genefinder.py /home/ashhadm/genomes/e.coli.fna > output1.txt
 ```
 ## Implementing gene finder with reverse complements
 
-```console
+```bash
 touch genefinder_reverse.py
 nano genefinder_reverse.py
 git add genefinder_reverse.py 
@@ -48,12 +48,12 @@ python genefinder_reverse.py /home/ashhadm/genomes/e.coli.fna > output2.txt
 ```
 ## Applying code to all 14 downloaded genomes
 
-```console
+```bash
 find /home/ashhadm/in_class/genomes -type f -name "*GCF*.fna" | while read genome; do python genefinder.py "$genome"; done > all_orfs.txt
 ```
 ## Implementing gene finder with length filter
 
-```console
+```bash
 touch genefinder_filtered.py
 nano genefinder_filtered.py
 git add genefinder_reverse.py 
@@ -64,7 +64,7 @@ python genefinder_filtered.py /home/ashhadm/genomes/e.coli.fna -l 100
 ```
 ## Implementing gene finder with length, rbs site and rbs type filter
 
-```console
+```bash
 touch genefinder_rbs.py
 nano genefinder_rbs.py
 git add genefinder_rbs.py 
