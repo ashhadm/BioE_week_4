@@ -77,7 +77,7 @@ git add genefinder_rbs.py
 git commit -m "added genefinder_rbs.py"
 
 # usage
-python genefinder_filtered.py /home/ashhadm/genomes/e.coli.fna -l 150 -u 25 -r AGGAGG
+python genefinder_rbs.py /home/ashhadm/genomes/e.coli.fna -l 150 -u 25 -r AGGAGG
 ```
 ![image](https://github.com/user-attachments/assets/642d92fe-7608-484f-9398-aa564451c9d1)
 
